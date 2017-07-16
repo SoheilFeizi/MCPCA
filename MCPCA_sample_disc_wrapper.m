@@ -101,3 +101,15 @@ end
 phi_mat=total_res{2,ind_m};
 fun_cell=total_res{3,ind_m};
 
+%*********************************
+% making positive orientation
+[n,p]=size(X_input);
+for i=1:p
+    temp=corrcoef(X_input(:,i),phi_mat(:,i));
+    if temp(1,2)<0
+        phi_mat(:,i)=-phi_mat(:,i);
+        fun_temp=fun_cell{i,1};
+        fun_temp(:,2)=-fun_temp(:,2);
+        fun_cell{i,1}=fun_temp;
+    end
+end
