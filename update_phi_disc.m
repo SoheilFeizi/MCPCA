@@ -1,4 +1,4 @@
-function [phi_mat,fun_cell]=update_phi_disc_april11(index,X,phi_mat,V,fun_cell)
+function [phi_mat,fun_cell]=update_phi_disc(index,X,phi_mat,V,fun_cell)
 
 % updating column index in the phi_mat
 % V is a p by q matrix, each column contains an eigenvector
