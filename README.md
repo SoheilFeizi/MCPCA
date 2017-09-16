@@ -5,6 +5,8 @@ Soheil Feizi and David Tse, Maximally Correlated Principal Component Analysis, a
 To apply MCPCA on datasets with discrete (categorical) features, use:
 MCPCA_sample_disc_wrapper.m 
 
+To apply MCPCA on datasets with continuous features, use: MCPCA_sample_polynomial_wrapper.m
+
 To apply MCPCA on datasets with mixed discrete and continuous features, use:
 MCPCA_sample_mixed_wrapper.m 
 
